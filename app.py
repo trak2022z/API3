@@ -8,13 +8,16 @@ app = Flask(__name__)
 
 notatki = []
 
-if __name__ == "__main__":
-        app.run()
+
 
 @app.route('/')
 def index():
     liczba = random.randint(1, 10)
-    return render_template("index.html", tytul="Astronomia z NASA", liczba=liczba, notatki=notatki)
+  return 'Heloooooo'  
+  #return render_template("index.html", tytul="Astronomia z NASA", liczba=liczba, notatki=notatki)
+
+if __name__ == "__main__":
+        app.run()
 
 @app.route('/zegnaj')
 def zegnaj():
