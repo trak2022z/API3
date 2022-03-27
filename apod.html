@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+
+
+{%block body %}
+    <style>
+        .b {font-weight: bold;}
+        .i {font-style: italic;}
+    </style>
+    <span class="b">Date of APOD:</span> {{ dt }}<p></p>
+    <span class="b">Explanation:</span> {{ expl }}<p></p>
+    <span class="b">Title:</span> {{ tit }}<p></p>
+    <img src="{{ ur }}"><p></p>
+    <span class="b">URL:</span><span class="i"><a href="{{ ur }}"  target="_blank">{{ ur }}</a></span>
+{% endblock %}
